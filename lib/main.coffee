@@ -4,6 +4,7 @@ self = require("sdk/self")
 ss = require("sdk/simple-storage")
 panels = require("sdk/panel")
 prefSet = require("simple-prefs")
+contextMenu = require("sdk/context-menu")
 # store = ss.storage
 # defaults =
 #   temperature:
@@ -61,10 +62,21 @@ widget = widgets.Widget(
 
     converted = not converted
 
-
-
+)
+menu = contextMenu.Menu(
+  label: "Metrifier"
+  context: contextMenu.SelectionContext()
+)
+itm = contextMenu.Item(
+  label: "Add to Fahrenheit Strings"
+  context: contextMenu.SelectionContext()
+  contentScriptFile: self.data.url('rightclick.js')
+  onMessage: (text)->
+    console.log "Adding", text, "to the string"
+    prefSet.prefs.fahrenheit += "|#{text}"
 )
 
+menu.addItem(itm)
 # port.on "save_Converted", (payload) ->
 #   save[payload.name] = payload.content
 

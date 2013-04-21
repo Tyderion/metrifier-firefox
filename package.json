@@ -10,7 +10,7 @@
         {
             "type": "string",
             "name": "fahrenheit",
-            "value": "F|degrees? Fahrenheit|degrees|Fahrenheit",
+            "value": "F|degrees? Fahrenheit|Fahrenheit",
             "title": "Fahrenheit Regex"
         },
         {
