@@ -28,6 +28,10 @@ contextMenu = require("sdk/context-menu")
 
 # store = defaults
 
+
+# prefSet.on "", ->
+#   worker.port.emit("setPrefs", prefSet) for url, worker in save
+
 converted = false
 
 save = {}
@@ -45,7 +49,7 @@ widget = widgets.Widget(
       worker = save[tabs.activeTab.url]
     else
       worker = tabs.activeTab.attach
-        contentScriptFile: [self.data.url("jquery.min.js"), self.data.url("quantities.js"), self.data.url("content_script.js")]
+        contentScriptFile: [self.data.url("jquery.min.js"), self.data.url("content_script.js")]
       tab = tabs.activeTab
       console.log worker
       tab.on "ready", ->

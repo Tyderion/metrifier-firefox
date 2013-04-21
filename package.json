@@ -30,24 +30,6 @@
             "name": "conv_fahrenheit",
             "value": true,
             "title": "Convert Fahrenheit"
-        },
-        {
-            "type": "string",
-            "name": "foot",
-            "value": "foot",
-            "title": "Foot Regex"
-        },
-        {
-            "type": "string",
-            "name": "distance_unit",
-            "value": "°C",
-            "title": "Distance Unit"
-        },
-        {
-            "type": "bool",
-            "name": "convert_foot",
-            "value": true,
-            "title": "Convert Foot"
         }
     ]
 }
