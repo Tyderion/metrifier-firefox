@@ -2,10 +2,10 @@
   "name": "metrifier",
   "fullName": "Metrifier",
   "id": "jid1-lrLaCyA84kfntA",
-  "description": "Metrifies a Homepage replacing all imperial units with metric ones (currently only Fahrenheit)",
+  "description": "Metrifies a Homepage replacing all imperial units with metric ones (currently only Fahrenheit) by clicking on the M-Icon in the bottom toolbar. Strings can be added to the Fahrenheit regex with a rightclick.",
   "author": "",
   "license": "MPL 2.0",
-  "version": "0.1",
+  "version": "0.1a",
   "preferences": [
         {
             "type": "string",

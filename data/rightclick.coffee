@@ -1,2 +1,3 @@
 self.on "click", ->
-  self.postMessage window.getSelection().toString()
+  self.postMessage
+  window.getSelection().toString()
