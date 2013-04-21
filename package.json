@@ -1,9 +1,53 @@
 {
-  "name": "metriciser",
-  "fullName": "metriciser",
+  "name": "metrifier",
+  "fullName": "Metrifier",
   "id": "jid1-lrLaCyA84kfntA",
-  "description": "a basic add-on",
+  "description": "Metrifies a Homepage replacing all imperial units with metric ones (currently only Fahrenheit)",
   "author": "",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "version": "0.1",
+  "preferences": [
+        {
+            "type": "string",
+            "name": "fahrenheit",
+            "value": "F|degrees? Fahrenheit|degrees|Fahrenheit",
+            "title": "Fahrenheit Regex"
+        },
+        {
+            "type": "string",
+            "name": "temperature_unit",
+            "value": "°C",
+            "title": "Temperature Unit"
+        },
+        {
+            "type": "string",
+            "name": "temperature_to",
+            "value": "celsius",
+            "title": "Convert Temperature to[kelvin, celsius]"
+        },
+        {
+            "type": "bool",
+            "name": "conv_fahrenheit",
+            "value": true,
+            "title": "Convert Fahrenheit"
+        },
+        {
+            "type": "string",
+            "name": "foot",
+            "value": "foot",
+            "title": "Foot Regex"
+        },
+        {
+            "type": "string",
+            "name": "distance_unit",
+            "value": "°C",
+            "title": "Distance Unit"
+        },
+        {
+            "type": "bool",
+            "name": "convert_foot",
+            "value": true,
+            "title": "Convert Foot"
+        }
+    ]
 }
