@@ -3,6 +3,8 @@ converted =
 min_celsius = -273.15
 prefSet = null
 
+#Maybe Use: http://james.padolsey.com/javascript/find-and-replace-text-with-javascript/
+
 self.port.on "setPrefs", (payload) ->
   prefSet = payload
 
